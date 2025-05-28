@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css" />
+    <link
+      href="https://unpkg.com/lucide@latest/dist/lu.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <title>Planos Brisanet</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="atendimento">
+          <i class="fas fa-headphones-alt"></i> Atendimento ao Cliente
+          <strong>0800 222 7350</strong>
+        </div>
+        <div class="social">
+          <span>Siga nossas redes</span>
+          <div class="social-icons">
+            <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+              alt="WhatsApp"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="segment-menu">
+        <a href="#">Para você</a>
+        <a href="#">Para empresas</a>
+        <a href="#">Para ISP</a>
+      </div>
+
+      <div class="main-header">
+        <div class="logo">
+          <img src="./assets/svgs/marcatv2.svg" alt="Logo L2KTV" />
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <nav>
+          <ul id="desktop-menu">
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Planos e Serviços</a></li>
+            <li><a href="#">Por que L2K</a></li>
+            <li><a href="#">Atendimento</a></li>
+            <li><a href="#">Minha L2K</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#">Para você</a>
+      <div class="submenu-mobile">
+        <a href="#">Para empresas</a>
+        <ul class="submenu-mobile-content">
+          <li><a href="#">Para ISP</a></li>
+          <li><a href="#">Para empresa</a></li>
+        </ul>
+      </div>
+      <a href="#">Para operadoras</a>
+      <a href="#">Quem somos</a>
+      <a href="#">Planos e Serviços</a>
+      <a href="#">Loja online</a>
+      <a href="#">Por que TIM</a>
+      <a href="#">Atendimento</a>
+      <a href="#">Meu TIM</a>
+    </div>
+
+    <section class="slider">
+      <div class="slide-container" id="slideContainer">
+        <div class="slide">
+          <div class="slide-text">
+            <h2>Tv L2k</h2>
+            <p>Aproveites Filmes, series e canais com a L2K</p>
+            <h1>Tudo Incluso</h1>
+            <div class="preco">A partir de R$ 54,99/mês</div>
+            <p>Tv incluso | Liberdade para escolher uma assinatura</p>
+            <div class="botoes">
+              <a href="#">Conferir planos</a>
+              <a href="#">Contratar</a>
+            </div>
+          </div>
+          <div class="slide-img">
+            <img src="./assets/images/slide-2.png" alt="menino no slide" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-text">
+            <h2>Mais Benefícios</h2>
+            <p>Assine e tenha acesso a plataformas exclusivas</p>
+            <h1>Apps Inclusos</h1>
+            <div class="preco">Tudo no mesmo plano</div>
+            <p>WI-FI 6, TV L2K, 100% Fibra optica</p>
+            <div class="botoes">
+              <a href="#">Saiba mais</a>
+            </div>
+          </div>
+          <div class="slide-img">
+            <img src="./assets/images/slide-1.png" alt="homem no slide" />
+          </div>
+        </div>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+      </div>
+    </section>
+    <div class="container">
+      <h1>Aproveite nossas ofertas</h1>
+      <div class="tabs">
+        <div class="tab active" onclick="switchTab(0)">Destaques</div>
+        <div class="tab" onclick="switchTab(1)">Internet</div>
+      </div>
+
+      <div class="plans-wrapper">
+        <div class="plans active" id="tab-content-0">
+          <div class="plan highlight">
+            <div class="plan-title">500MEGA</div>
+            <div class="plan-subtitle">100% fibra óptica</div>
+            <div class="divider"></div>
+            <div class="service-name">R$ 99,90/mês</div>
+            <div class="icons">
+              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
+              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
+              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+            </div>
+
+            <a href="#" class="btn">Aproveitar oferta</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan-title">400MEGA</div>
+            <div class="plan-subtitle">100% fibra óptica</div>
+            <div class="divider"></div>
+            <div class="service-name">R$ 84,90/mês</div>
+
+            <div class="icons">
+              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
+              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
+              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+            </div>
+
+            <a href="#" class="btn">Aproveitar oferta</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan-title">200MEGA</div>
+            <div class="plan-subtitle">100% fibra óptica</div>
+            <div class="divider"></div>
+            <div class="service-name">R$ 69,90/mês</div>
+            <div class="icons">
+              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
+              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
+              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+            </div>
+
+            <a href="#" class="btn">Aproveitar oferta</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan-title">100MEGA</div>
+            <div class="plan-subtitle">100% fibra óptica</div>
+            <div class="divider"></div>
+            <div class="service-name">R$ 59,90/mês</div>
+
+            <div class="icons">
+              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
+              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
+              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+            </div>
+            <div class="price">R$ 59,90/mês</div>
+            <a href="#" class="btn">Aproveitar oferta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="combo-section">
+        <div class="combo-text">
+          <h2>
+            Aproveite nossas ofertas <span>exclusivas</span> em forma de combo
+          </h2>
+          <a href="#" class="combo-button">Conhecer as ofertas</a>
+        </div>
+        <div class="combo-cards">
+          <div class="combo-card">
+            <img src="./assets/images/parasite-img1.png" alt="Internet" />
+            <div class="info">
+              <h4>Internet</h4>
+              <p>Serviços de internet 100% fibra óptica com alta velocidade</p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <img src="./assets/images/parasite-img3.png" alt="Entretenimento" />
+            <div class="info">
+              <h4>Entretenimento</h4>
+              <p>
+                Filmes, séries, canais ao vivo e muita diversão com qualidade
+                FHD
+              </p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <img src="./assets/images/parasite-img2.png" alt="Telefonia" />
+            <div class="info">
+              <h4>100% Conectado</h4>
+              <p>Com a L2k a conexão é garantida</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="tim-container">
+      <div class="tim-header" data-aos="fade-down">
+        <h2>Confira os serviços de atendimento para clientes</h2>
+      </div>
+      <div class="tim-grid">
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="tim-icon" data-tooltip="Meu TIM">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <div class="tim-info">
+            <h4>Minha L2K</h4>
+            <p>Informações do plano</p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="tim-icon" data-tooltip="Fatura">
+            <i data-lucide="mail"></i>
+          </div>
+          <div class="tim-info">
+            <h4>Fatura</h4>
+            <p>2ª via, código de barras e ativação de conta</p>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="tim-icon" data-tooltip="Plano">
+            <i data-lucide="shuffle"></i>
+          </div>
+          <div class="tim-info">
+            <h4>Troca de plano</h4>
+            <p>Escolha o plano que mais combina com você</p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <div class="tim-icon" data-tooltip="Negociação">
+            <i data-lucide="file-text"></i>
+          </div>
+          <div class="tim-info">
+            <h4>L2KNegocia</h4>
+            <p>Consulte suas dívidas e negocie, sem sair de casa</p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <div class="tim-icon" data-tooltip="Portabilidade">
+            <i data-lucide="repeat"></i>
+          </div>
+          <div class="tim-info">
+            <h4>Mudança de endereço</h4>
+            <p>Mudança de endereço, rápida e prática</p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="tim-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
+          <div class="tim-icon" data-tooltip="Suporte">
+            <i data-lucide="settings"></i>
+          </div>
+          <div class="tim-info">
+            <h4>Técnico Virtual L2K Fibra</h4>
+            <p>Conte com suporte rápido para sua internet</p>
+          </div>
+        </a>
+      </div>
+      <button
+        class="tim-link"
+        onclick="openModal()"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        Acesse a página de atendimento →
+      </button>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3>Você será redirecionado</h3>
+        <p>Em breve abriremos a página oficial de atendimento TIM.</p>
+        <button onclick="closeModal()">Fechar</button>
+      </div>
+    </div>
+
+    <a
+      href="https://api.whatsapp.com/send/?phone=557581167034"
+      class="whatsapp-btn"
+      target="_blank"
+      >💬</a
+    >
+
+    <section class="sobre-nos">
+      <div class="sobre-nos-container">
+        <div class="sobre-nos-img">
+          <img
+            src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
+"
+            alt="Equipe L2K"
+          />
+        </div>
+        <div class="sobre-nos-texto">
+          <h2>Sobre Nós</h2>
+          <p>
+            Na L2K, conectamos pessoas com qualidade e confiança. Nosso
+            compromisso é oferecer internet de alta velocidade com atendimento
+            humanizado e tecnologia de ponta.
+          </p>
+          <p>
+            Com uma equipe dedicada e soluções inovadoras, buscamos transformar
+            a experiência de nossos clientes todos os dias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="auto-container">
+      <h2>Autoatendimento para clientes</h2>
+      <div class="auto-grid">
+        <a class="auto-card" href="#" target="_blank">
+          <img
+            src="https://img.icons8.com/ios-filled/50/000000/document--v1.png"
+            alt="2ª via"
+            class="auto-icon"
+          />
+          <h4>2ª via da fatura</h4>
+          <p>Baixe sua fatura através do nosso Aplicativo</p>
+          <div class="auto-arrow">→</div>
+        </a>
+
+        <a
+          class="auto-card active"
+          href="https://api.whatsapp.com/send/?phone=557581167034&text&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <img
+            src="https://img.icons8.com/ios/50/000000/phone.png"
+            alt="Ligamos"
+            class="auto-icon"
+          />
+          <h4>Ligamos para você</h4>
+          <p>Informe seus dados que entraremos em contato</p>
+          <div class="auto-arrow">→</div>
+        </a>
+
+        <a class="auto-card" href="#" target="_blank">
+          <img
+            src="https://img.icons8.com/ios/50/000000/headphones.png"
+            alt="Ajuda"
+            class="auto-icon"
+          />
+          <h4>Central de ajuda</h4>
+          <p>Tudo que você precisa saber para tirar suas dúvidas</p>
+          <div class="auto-arrow">→</div>
+        </a>
+
+        <a class="auto-card" href="#" target="_blank">
+          <img
+            src="https://img.icons8.com/ios/50/000000/monitor.png"
+            alt="Remoto"
+            class="auto-icon"
+          />
+          <h4>Suporte remoto</h4>
+          <p>Realizamos o seu atendimento por acesso remoto</p>
+          <div class="auto-arrow">→</div>
+        </a>
+
+        <a class="auto-card" href="#" target="_blank">
+          <img
+            src="https://img.icons8.com/ios/50/000000/marker.png"
+            alt="Lojas"
+            class="auto-icon"
+          />
+          <h4>Nossas lojas</h4>
+          <p>Verifique se há cobertura L2K na sua cidade</p>
+          <div class="auto-arrow">→</div>
+        </a>
+
+        <a class="auto-card" href="#" target="_blank">
+          <img
+            src="https://img.icons8.com/ios/50/000000/speech-bubble.png"
+            alt="Ouvidoria"
+            class="auto-icon"
+          />
+          <h4>Ouvidoria</h4>
+          <p>Nossa central está pronta para te receber</p>
+          <div class="auto-arrow">→</div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>Acessos</h4>
+          <a href="#">Canal do Cliente</a>
+          <a href="#">L2K Play</a>
+        </div>
+        <div class="footer-column">
+          <h4>Atendimento</h4>
+          <a href="#">Autoatendimento</a>
+          <a href="#">Cadastro e senha</a>
+          <a href="#">2ª via de fatura</a>
+          <a href="#">Ouvidoria</a>
+        </div>
+        <div class="footer-column">
+          <h4>Regulatório e Acessibilidade</h4>
+          <a href="#">Acessibilidade</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Portal de Privacidade</a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="social-icons">
+          <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+            alt="WhatsApp"
+          />
+        </div>
+        <div class="app-links">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1280px-Google_Play_2022_logo.svg.png"
+            alt="Google Play"
+          />
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="App Store"
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Portal de Privacidade</a>
+        </div>
+
+        <div class="access-tools">
+          <button>Contrate</button>
+          <button>ISP</button>
+          <button>Suporte</button>
+          <button>Trabalhe conosco</button>
+        </div>
+
+        <div class="copyright">© 2025 L2K Todos os direitos reservados</div>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=557581167034"
+      class="whatsapp-footer-link"
+      target="_blank"
+      >💬</a
+    >
+
+    <div id="google_translate_element" style="display: none"></div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      let index = 0;
+      const container = document.getElementById("slideContainer");
+      const totalSlides = container.children.length;
+      const menu = (document.getElementById("mobile-menu").style.display =
+        "none");
+
+      function updateSlider() {
+        container.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      }
+
+      setInterval(nextSlide, 6000);
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+      AOS.init();
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "pt",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init();
+    </script>
+    <script>
+      function switchTab(index) {
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".plans");
+        tabs.forEach((tab, i) => {
+          tab.classList.toggle("active", i === index);
+          contents[i].classList.toggle("active", i === index);
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({ once: true });
+
+      function openModal() {
+        document.getElementById("modal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
