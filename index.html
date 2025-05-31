@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,8 @@
     <title>Planos Brisanet</title>
   </head>
   <body>
-    <header>
+    <!-- Header -->
+    <header class="header">
       <div class="top-bar">
         <div class="atendimento">
           <i class="fas fa-headphones-alt"></i> Atendimento ao Cliente
@@ -27,14 +28,23 @@
         <div class="social">
           <span>Siga nossas redes</span>
           <div class="social-icons">
-            <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
-              alt="WhatsApp"
-            />
+            <a href="https://www.instagram.com/l2ktelecom/" target="_blank">
+              <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=557581167034"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                alt="WhatsApp"
+              />
+            </a>
           </div>
         </div>
       </div>
+
+      <hr class="header_divider" />
 
       <div class="segment-menu">
         <a href="#">Para você</a>
@@ -44,7 +54,7 @@
 
       <div class="main-header">
         <div class="logo">
-          <img src="./assets/svgs/marcatv2.svg" alt="Logo L2KTV" />
+          <img src="./assets/svgs/marcatv1.svg" alt="Logo L2KTV" />
           <div class="hamburger" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
           </div>
@@ -80,6 +90,7 @@
       <a href="#">Meu TIM</a>
     </div>
 
+    <!-- Main Section -->
     <section class="slider">
       <div class="slide-container" id="slideContainer">
         <div class="slide">
@@ -119,6 +130,8 @@
         <button onclick="nextSlide()">❯</button>
       </div>
     </section>
+
+    <!-- Offers Section -->
     <div class="container">
       <h1>Aproveite nossas ofertas</h1>
       <div class="tabs">
@@ -188,6 +201,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Combos Section -->
     <div class="container">
       <div class="combo-section">
         <div class="combo-text">
@@ -225,6 +240,7 @@
       </div>
     </div>
 
+    <!-- TIM Section  -->
     <section class="tim-container">
       <div class="tim-header" data-aos="fade-down">
         <h2>Confira os serviços de atendimento para clientes</h2>
@@ -332,6 +348,7 @@
       </button>
     </section>
 
+    <!-- Modal -->
     <div class="modal" id="modal">
       <div class="modal-content">
         <h3>Você será redirecionado</h3>
@@ -340,6 +357,7 @@
       </div>
     </div>
 
+    <!-- Whatsapp link fixed -->
     <a
       href="https://api.whatsapp.com/send/?phone=557581167034"
       class="whatsapp-btn"
@@ -347,6 +365,7 @@
       >💬</a
     >
 
+    <!-- About Section -->
     <section class="sobre-nos">
       <div class="sobre-nos-container">
         <div class="sobre-nos-img">
@@ -371,6 +390,7 @@
       </div>
     </section>
 
+    <!-- Customer service Section -->
     <section class="auto-container">
       <h2>Autoatendimento para clientes</h2>
       <div class="auto-grid">
@@ -446,71 +466,131 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer-top">
-        <div class="footer-column">
-          <h4>Acessos</h4>
-          <a href="#">Canal do Cliente</a>
-          <a href="#">L2K Play</a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_content">
+          <!-- Lojas -->
+          <div class="footer_lojas">
+            <h2>Lojas</h2>
+            <ul>
+              <li class="footer_contatos_address">
+                <i class="fa-solid fa-location-dot"></i>
+                Rua Alvaro Lobo, 16. Centro, Candeal/Ba - 48710-000.
+              </li>
+              <li class="footer_contatos_address">
+                <i class="fa-solid fa-location-dot"></i>
+                Rua Maria Quitéria, 2-66, Tanquinho/Ba - 441600-000.
+              </li>
+            </ul>
+          </div>
+          <!-- Contatos -->
+          <div class="footer_contatos">
+            <h2>Contatos</h2>
+            <ul>
+              <!-- Telefones -->
+              <li class="footer_contatos_phone">
+                <i class="fa-solid fa-phone"></i>
+                0800 699 7002
+              </li>
+              <li class="footer_contatos_phone">
+                <i class="fa-solid fa-phone"></i>
+                Candeal e Ichu: 75 98116-7034
+              </li>
+              <li class="footer_contatos_phone">
+                <i class="fa-solid fa-phone"></i> Tanquinho: 75 98344-1034
+              </li>
+              <li class="footer_contatos_phone">
+                <i class="fa-solid fa-phone"></i>
+                Feira de Santana: 75 98186-3347
+              </li>
+              <!-- Email -->
+              <li class="footer_contatos_email">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:financeiro@l2ktelecom.com.br">
+                  financeiro@l2ktelecom.com.br
+                </a>
+              </li>
+              <!-- Facebook -->
+              <li class="footer_contatos_social">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/l2ktelecom" target="_blank">
+                  l2ktelecom
+                </a>
+              </li>
+              <!-- Instagram -->
+              <li class="footer_contatos_social">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/l2ktelecom/" target="_blank">
+                  l2ktelecom
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-column">
-          <h4>Atendimento</h4>
-          <a href="#">Autoatendimento</a>
-          <a href="#">Cadastro e senha</a>
-          <a href="#">2ª via de fatura</a>
-          <a href="#">Ouvidoria</a>
-        </div>
-        <div class="footer-column">
-          <h4>Regulatório e Acessibilidade</h4>
-          <a href="#">Acessibilidade</a>
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Portal de Privacidade</a>
-        </div>
-      </div>
 
-      <div class="footer-middle">
-        <div class="social-icons">
-          <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
-            alt="WhatsApp"
-          />
-        </div>
-        <div class="app-links">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1280px-Google_Play_2022_logo.svg.png"
-            alt="Google Play"
-          />
-          <img
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-            alt="App Store"
-          />
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-links">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Portal de Privacidade</a>
+        <div class="footer_logo">
+          <img src="./assets/svgs/marcatv2.svg" alt="" />
         </div>
 
-        <div class="access-tools">
-          <button>Contrate</button>
-          <button>ISP</button>
-          <button>Suporte</button>
-          <button>Trabalhe conosco</button>
+        <!-- <div class="footer-top">
+          <div class="footer-column">
+            <h4>Acessos</h4>
+            <a href="#">Canal do Cliente</a>
+            <a href="#">L2K Play</a>
+          </div>
+          <div class="footer-column">
+            <h4>Atendimento</h4>
+            <a href="#">Autoatendimento</a>
+            <a href="#">Cadastro e senha</a>
+            <a href="#">2ª via de fatura</a>
+            <a href="#">Ouvidoria</a>
+          </div>
+          <div class="footer-column">
+            <h4>Regulatório e Acessibilidade</h4>
+            <a href="#">Acessibilidade</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Portal de Privacidade</a>
+          </div>
         </div>
 
-        <div class="copyright">© 2025 L2K Todos os direitos reservados</div>
+        <div class="footer-middle">
+          <div class="social-icons">
+            <img src="https://vetores.org/d/instagram.svg" alt="Instagram" />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+              alt="WhatsApp"
+            />
+          </div>
+          <div class="app-links">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/1280px-Google_Play_2022_logo.svg.png"
+              alt="Google Play"
+            />
+            <img
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store"
+            />
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Portal de Privacidade</a>
+          </div>
+
+          <div class="access-tools">
+            <button>Contrate</button>
+            <button>ISP</button>
+            <button>Suporte</button>
+            <button>Trabalhe conosco</button>
+          </div>
+
+          <div class="copyright">© 2025 L2K Todos os direitos reservados</div>
+        </div> -->
       </div>
     </footer>
-
-    <a
-      href="https://api.whatsapp.com/send?phone=557581167034"
-      class="whatsapp-footer-link"
-      target="_blank"
-      >💬</a
-    >
 
     <div id="google_translate_element" style="display: none"></div>
 
