@@ -94,6 +94,7 @@
     <section class="slider">
       <div class="slide-container" id="slideContainer">
         <div class="slide">
+          <!-- <img src="./assets/images/FULLBANNER luz.png" alt="menino no slide" /> -->
           <div class="slide-text">
             <h2>Tv L2k</h2>
             <p>Aproveites Filmes, series e canais com a L2K</p>
@@ -106,7 +107,10 @@
             </div>
           </div>
           <div class="slide-img">
-            <img src="./assets/images/slide-2.png" alt="menino no slide" />
+            <!-- <img
+              src="./assets/images/FULLBANNER luz.png"
+              alt="menino no slide"
+            /> -->
           </div>
         </div>
         <div class="slide">
@@ -121,7 +125,10 @@
             </div>
           </div>
           <div class="slide-img">
-            <img src="./assets/images/slide-1.png" alt="homem no slide" />
+            <!-- <img
+              src="./assets/images/FULLBANNER2 luz.png"
+              alt="homem no slide"
+            /> -->
           </div>
         </div>
       </div>
@@ -195,7 +202,7 @@
               <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
               <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
             </div>
-            <div class="price">R$ 59,90/mês</div>
+            <!-- <div class="price">R$ 59,90/mês</div> -->
             <a href="#" class="btn">Aproveitar oferta</a>
           </div>
         </div>
@@ -205,13 +212,13 @@
     <!-- Combos Section -->
     <div class="container">
       <div class="combo-section">
-        <div class="combo-text">
+        <div class="combo-text" data-aos="fade-right">
           <h2>
             Aproveite nossas ofertas <span>exclusivas</span> em forma de combo
           </h2>
           <a href="#" class="combo-button">Conhecer as ofertas</a>
         </div>
-        <div class="combo-cards">
+        <div class="combo-cards" data-aos="fade-left">
           <div class="combo-card">
             <img src="./assets/images/parasite-img1.png" alt="Internet" />
             <div class="info">
@@ -240,112 +247,114 @@
       </div>
     </div>
 
-    <!-- TIM Section  -->
-    <section class="tim-container">
-      <div class="tim-header" data-aos="fade-down">
-        <h2>Confira os serviços de atendimento para clientes</h2>
-      </div>
-      <div class="tim-grid">
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="tim-icon" data-tooltip="Meu TIM">
-            <i data-lucide="smartphone"></i>
-          </div>
-          <div class="tim-info">
-            <h4>Minha L2K</h4>
-            <p>Informações do plano</p>
-          </div>
-        </a>
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
+    <!-- Services Section  -->
+    <section class="tim-section">
+      <div class="tim-container">
+        <div class="tim-header" data-aos="fade-down">
+          <h2>Confira os serviços de atendimento para clientes</h2>
+        </div>
+        <div class="tim-grid">
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="tim-icon" data-tooltip="Meu TIM">
+              <i data-lucide="smartphone"></i>
+            </div>
+            <div class="tim-info">
+              <h4>Minha L2K</h4>
+              <p>Informações do plano</p>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="tim-icon" data-tooltip="Fatura">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="tim-info">
+              <h4>Fatura</h4>
+              <p>2ª via, código de barras e ativação de conta</p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="tim-icon" data-tooltip="Plano">
+              <i data-lucide="shuffle"></i>
+            </div>
+            <div class="tim-info">
+              <h4>Troca de plano</h4>
+              <p>Escolha o plano que mais combina com você</p>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="tim-icon" data-tooltip="Negociação">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="tim-info">
+              <h4>L2KNegocia</h4>
+              <p>Consulte suas dívidas e negocie, sem sair de casa</p>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="tim-icon" data-tooltip="Portabilidade">
+              <i data-lucide="repeat"></i>
+            </div>
+            <div class="tim-info">
+              <h4>Mudança de endereço</h4>
+              <p>Mudança de endereço, rápida e prática</p>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="tim-card"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <div class="tim-icon" data-tooltip="Suporte">
+              <i data-lucide="settings"></i>
+            </div>
+            <div class="tim-info">
+              <h4>Técnico Virtual L2K Fibra</h4>
+              <p>Conte com suporte rápido para sua internet</p>
+            </div>
+          </a>
+        </div>
+        <button
+          class="tim-link"
+          onclick="openModal()"
+          data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <div class="tim-icon" data-tooltip="Fatura">
-            <i data-lucide="mail"></i>
-          </div>
-          <div class="tim-info">
-            <h4>Fatura</h4>
-            <p>2ª via, código de barras e ativação de conta</p>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <div class="tim-icon" data-tooltip="Plano">
-            <i data-lucide="shuffle"></i>
-          </div>
-          <div class="tim-info">
-            <h4>Troca de plano</h4>
-            <p>Escolha o plano que mais combina com você</p>
-          </div>
-        </a>
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <div class="tim-icon" data-tooltip="Negociação">
-            <i data-lucide="file-text"></i>
-          </div>
-          <div class="tim-info">
-            <h4>L2KNegocia</h4>
-            <p>Consulte suas dívidas e negocie, sem sair de casa</p>
-          </div>
-        </a>
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
-          data-aos-delay="600"
-        >
-          <div class="tim-icon" data-tooltip="Portabilidade">
-            <i data-lucide="repeat"></i>
-          </div>
-          <div class="tim-info">
-            <h4>Mudança de endereço</h4>
-            <p>Mudança de endereço, rápida e prática</p>
-          </div>
-        </a>
-        <a
-          href="#"
-          class="tim-card"
-          target="_blank"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
-          <div class="tim-icon" data-tooltip="Suporte">
-            <i data-lucide="settings"></i>
-          </div>
-          <div class="tim-info">
-            <h4>Técnico Virtual L2K Fibra</h4>
-            <p>Conte com suporte rápido para sua internet</p>
-          </div>
-        </a>
+          Acesse a página de atendimento →
+        </button>
       </div>
-      <button
-        class="tim-link"
-        onclick="openModal()"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-      >
-        Acesse a página de atendimento →
-      </button>
     </section>
 
     <!-- Modal -->
@@ -390,7 +399,7 @@
       </div>
     </section>
 
-    <!-- Customer service Section -->
+    <!-- Self-service to customer Section -->
     <section class="auto-container">
       <h2>Autoatendimento para clientes</h2>
       <div class="auto-grid">
@@ -406,7 +415,7 @@
         </a>
 
         <a
-          class="auto-card active"
+          class="auto-card"
           href="https://api.whatsapp.com/send/?phone=557581167034&text&type=phone_number&app_absent=0"
           target="_blank"
         >
@@ -539,6 +548,18 @@
                 Rua Maria Quitéria, 2-66, Tanquinho/Ba - 441600-000.
               </li>
             </ul>
+
+            <p>
+              Chega de quedas, lentidão e promessas vazias. Com a L2K, você tem
+              uma conexão 100% fibra óptica, estável de verdade, com suporte
+              rápido e atendimento que resolve.
+            </p>
+            <p>
+              Aqui, a internet funciona quando você mais precisa — seja para
+              trabalhar, estudar ou curtir seu streaming favorito. L2K é
+              velocidade, confiança e atenção com você. Escolha quem realmente
+              entrega!
+            </p>
           </div>
           <!-- Contatos -->
           <div class="footer_contatos">

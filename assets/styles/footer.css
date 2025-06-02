@@ -150,6 +150,14 @@ footer .copyright {
   margin-bottom: 0.5rem;
 }
 
+.footer_lojas p {
+  text-wrap: balance;
+}
+
+.footer_lojas p:not(:last-child) {
+  margin-block: 2rem 0.6rem;
+}
+
 .footer_contatos .footer_contatos_phone {
   margin-bottom: 0.5rem;
 }

@@ -1,6 +1,8 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./capture.css);
+@import url(./services.css);
+@import url(./self-service.css);
 
 * {
   margin: 0;
@@ -228,11 +230,22 @@ nav ul li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 60px 50px;
-  background: linear-gradient(90deg, #001d4c 0%, #002776 100%);
+  padding-block: 192px;
+  padding-inline: 50px;
   color: var(--branco);
   width: 100%;
   flex: 0 0 100%;
+  position: relative;
+}
+
+.slide:nth-child(1) {
+  background-image: url(../images/banner1.png);
+  background-position: center center;
+}
+
+.slide:nth-child(2) {
+  background: url(../images/banner2.png);
+  background-position: center center;
 }
 
 .slide-text {
@@ -540,92 +553,12 @@ body {
   background: #fff;
 }
 
-/* footer {
-  background: #54b4ea;
-  color: white;
-  font-size: 0.9rem;
-  padding: 30px 0;
-}
-
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 20px;
-  padding-bottom: 10px;
-  max-width: 1000px;
-  margin: 20px auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.footer-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-bottom: 10px;
-  padding-inline: 1.25rem;
-  max-width: 1000px;
-  margin: 20px auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 180px;
-  margin-bottom: 10px;
-}
-
-.footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.footer-column a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 4px 0;
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
-}
-
-.footer-middle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin: 20px 0;
-} */
-
 .social-icons img,
 .app-links img {
   height: 30px;
   margin: 0 8px;
   cursor: pointer;
 }
-
-/* .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-align: center;
-}
-
-.footer-links a {
-  color: white;
-  margin: 0 8px;
-  font-size: 0.85rem;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-} */
 
 .access-tools {
   display: flex;
@@ -649,25 +582,7 @@ body {
   color: #000;
 }
 
-/* footer .copyright {
-  font-size: 0.75rem;
-  opacity: 0.8;
-} */
-
 @media (max-width: 768px) {
-  /* .footer-top {
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    text-align: center;
-    align-items: center;
-  }
-
-  .footer-middle {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
   .access-tools {
     flex-direction: column;
   }
@@ -870,64 +785,6 @@ body {
   margin-bottom: 40px;
 }
 
-.auto-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-}
-
-.auto-card {
-  background: #fff;
-  padding: 20px 16px;
-  border-radius: 14px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 0.3s ease;
-  border: 1px solid #54b4ea;
-  height: 160px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.auto-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.auto-card h4 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin: 0 0 6px;
-  color: #00154f;
-}
-
-.auto-card p {
-  font-size: 0.8rem;
-  color: #555;
-  margin: 0;
-}
-
-.auto-icon {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 14px;
-}
-
-.auto-arrow {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: #54b4ea;
-  align-self: flex-end;
-  font-weight: bold;
-}
-
-.auto-card.active {
-  background-color: #54b4ea;
-  border-color: #54b4ea;
-}
-
 @media (max-width: 768px) {
   .auto-container h2 {
     font-size: 1.8rem;
@@ -943,7 +800,7 @@ body {
   transition: background 0.3s;
 }
 
-.tim-container {
+/* .tim-container {
   max-width: 100%;
   margin: auto;
   padding: 60px 20px;
@@ -1080,7 +937,7 @@ body {
 .tim-link:hover {
   background-color: white;
   color: #001489;
-}
+} */
 
 .whatsapp-btn {
   position: fixed;
@@ -1133,14 +990,14 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .tim-header h2 {
     font-size: 1.6rem;
   }
   .tim-grid {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 .sobre-nos {
   background-color: #eaf6fe;
