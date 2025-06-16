@@ -144,3 +144,15 @@
 }
 
 /* HEADER */
+
+@media (width <= 1070px) {
+  .top-center {
+    display: none;
+  }
+}
+
+@media (width <= 870px) {
+  .top-bar {
+    display: none;
+  }
+}

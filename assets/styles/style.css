@@ -3,6 +3,7 @@
 @import url(./capture.css);
 @import url(./services.css);
 @import url(./self-service.css);
+@import url(./offers.css);
 
 * {
   margin: 0;
@@ -204,7 +205,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.tabs {
+/* .tabs {
   display: flex;
   gap: 40px;
   border-bottom: 2px solid #54b4ea;
@@ -284,7 +285,7 @@ h1 {
   font-size: 12px;
   color: #666;
   margin-bottom: 10px;
-}
+} */
 
 .divider {
   height: 2px;

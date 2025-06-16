@@ -113,69 +113,343 @@
     <!-- Offers Section -->
     <div class="container">
       <h1>Aproveite nossas ofertas</h1>
-      <div class="tabs">
-        <div class="tab active" onclick="switchTab(0)">Destaques</div>
-        <div class="tab" onclick="switchTab(1)">Internet</div>
-      </div>
 
       <div class="plans-wrapper">
         <div class="plans active" id="tab-content-0">
-          <div class="plan highlight">
-            <div class="plan-title">500MEGA</div>
-            <div class="plan-subtitle">100% fibra óptica</div>
-            <div class="divider"></div>
-            <div class="service-name">R$ 99,90/mês</div>
-            <div class="icons">
-              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
-              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
-              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+          <div class="plan" data-base="139.90">
+            <div class="plan-info">
+              <h3 class="plan-info-subtitle">Link premium</h3>
+              <h2 class="plan-info-title">800 Mega</h2>
+              <p class="plan-info-price">R$ 139,90</p>
             </div>
 
-            <a href="#" class="btn">Aproveitar oferta</a>
+            <a class="plan-btn" href="#">Eu quero</a>
+
+            <ul class="plan-benefits">
+              <li>
+                <i class="fa-solid fa-heart"></i>
+                Instalação grátis
+              </li>
+              <li>
+                <i class="fa-solid fa-download"></i>
+                Download de 800 Mbps
+              </li>
+              <li>
+                <i class="fa-solid fa-bolt"></i>
+                Tecnologia 100% Fibra
+              </li>
+            </ul>
+
+            <div class="plan-addons">
+              <!-- Addon #1 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha um app:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-app-1"
+                      data-extra="10"
+                    />
+                    <label
+                      for="plan-premium-app-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      +
+                      <img src="/assets/images/Globoplay_logo.webp" alt="" />
+                      |
+                      <img src="/assets/images/logo-max.png" alt="" />
+                      |
+                      <img src="/assets/images/Deezer-Logo.png" alt="" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- Addon #2 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha o serviço:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-1"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 1
+                    </label>
+                  </li>
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-2"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-2"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 2
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="plan">
-            <div class="plan-title">400MEGA</div>
-            <div class="plan-subtitle">100% fibra óptica</div>
-            <div class="divider"></div>
-            <div class="service-name">R$ 84,90/mês</div>
-
-            <div class="icons">
-              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
-              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
-              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+          <div class="plan" data-base="139.90">
+            <div class="plan-info">
+              <h3 class="plan-info-subtitle">Link premium</h3>
+              <h2 class="plan-info-title">800 Mega</h2>
+              <p class="plan-info-price">R$ 139,90</p>
             </div>
 
-            <a href="#" class="btn">Aproveitar oferta</a>
+            <a class="plan-btn" href="#">Eu quero</a>
+
+            <ul class="plan-benefits">
+              <li>
+                <i class="fa-solid fa-heart"></i>
+                Instalação grátis
+              </li>
+              <li>
+                <i class="fa-solid fa-download"></i>
+                Download de 800 Mbps
+              </li>
+              <li>
+                <i class="fa-solid fa-bolt"></i>
+                Tecnologia 100% Fibra
+              </li>
+            </ul>
+
+            <div class="plan-addons">
+              <!-- Addon #1 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha um app:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-app-1"
+                      data-extra="10"
+                    />
+                    <label
+                      for="plan-premium-app-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      +
+                      <img src="/assets/images/Globoplay_logo.webp" alt="" />
+                      |
+                      <img src="/assets/images/logo-max.png" alt="" />
+                      |
+                      <img src="/assets/images/Deezer-Logo.png" alt="" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- Addon #2 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha o serviço:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-1"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 1
+                    </label>
+                  </li>
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-2"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-2"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 2
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="plan">
-            <div class="plan-title">200MEGA</div>
-            <div class="plan-subtitle">100% fibra óptica</div>
-            <div class="divider"></div>
-            <div class="service-name">R$ 69,90/mês</div>
-            <div class="icons">
-              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
-              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
-              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+          <div class="plan" data-base="139.90">
+            <div class="plan-info">
+              <h3 class="plan-info-subtitle">Link premium</h3>
+              <h2 class="plan-info-title">800 Mega</h2>
+              <p class="plan-info-price">R$ 139,90</p>
             </div>
 
-            <a href="#" class="btn">Aproveitar oferta</a>
+            <a class="plan-btn" href="#">Eu quero</a>
+
+            <ul class="plan-benefits">
+              <li>
+                <i class="fa-solid fa-heart"></i>
+                Instalação grátis
+              </li>
+              <li>
+                <i class="fa-solid fa-download"></i>
+                Download de 800 Mbps
+              </li>
+              <li>
+                <i class="fa-solid fa-bolt"></i>
+                Tecnologia 100% Fibra
+              </li>
+            </ul>
+
+            <div class="plan-addons">
+              <!-- Addon #1 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha um app:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-app-1"
+                      data-extra="10"
+                    />
+                    <label
+                      for="plan-premium-app-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      +
+                      <img src="/assets/images/Globoplay_logo.webp" alt="" />
+                      |
+                      <img src="/assets/images/logo-max.png" alt="" />
+                      |
+                      <img src="/assets/images/Deezer-Logo.png" alt="" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- Addon #2 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha o serviço:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-1"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 1
+                    </label>
+                  </li>
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-2"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-2"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 2
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="plan">
-            <div class="plan-title">100MEGA</div>
-            <div class="plan-subtitle">100% fibra óptica</div>
-            <div class="divider"></div>
-            <div class="service-name">R$ 59,90/mês</div>
-
-            <div class="icons">
-              <img src="./assets/svgs/marcatv1.svg" alt="Globoplay" />
-              <img src="./assets/svgs/instalacao.svg" alt="Icon1" />
-              <img src="./assets/svgs/wifi-6.svg" alt="Icon2" />
+          <div class="plan" data-base="139.90">
+            <div class="plan-info">
+              <h3 class="plan-info-subtitle">Link premium</h3>
+              <h2 class="plan-info-title">800 Mega</h2>
+              <p class="plan-info-price">R$ 139,90</p>
             </div>
-            <!-- <div class="price">R$ 59,90/mês</div> -->
-            <a href="#" class="btn">Aproveitar oferta</a>
+
+            <a class="plan-btn" href="#">Eu quero</a>
+
+            <ul class="plan-benefits">
+              <li>
+                <i class="fa-solid fa-heart"></i>
+                Instalação grátis
+              </li>
+              <li>
+                <i class="fa-solid fa-download"></i>
+                Download de 800 Mbps
+              </li>
+              <li>
+                <i class="fa-solid fa-bolt"></i>
+                Tecnologia 100% Fibra
+              </li>
+            </ul>
+
+            <div class="plan-addons">
+              <!-- Addon #1 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha um app:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-app-1"
+                      data-extra="10"
+                    />
+                    <label
+                      for="plan-premium-app-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      +
+                      <img src="/assets/images/Globoplay_logo.webp" alt="" />
+                      |
+                      <img src="/assets/images/logo-max.png" alt="" />
+                      |
+                      <img src="/assets/images/Deezer-Logo.png" alt="" />
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- Addon #2 -->
+              <div class="plan-addon">
+                <h4 class="plan-addon-title">Escolha o serviço:</h4>
+                <ul class="plan-addon-list">
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-1"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-1"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 1
+                    </label>
+                  </li>
+                  <li class="plan-addon-list-item">
+                    <input
+                      type="checkbox"
+                      id="plan-premium-service-2"
+                      data-extra="20"
+                    />
+                    <label
+                      for="plan-premium-service-2"
+                      class="plan-addon-list-item-label"
+                    >
+                      + Serviço 2
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -513,6 +787,7 @@
 
     <div id="google_translate_element" style="display: none"></div>
 
+    <script src="./assets/scripts/plans.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
