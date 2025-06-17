@@ -5,7 +5,7 @@
 }
 
 .services-container {
-  background-color: #1f1f1f;
+  background-color: #54b4ea;
   border-radius: 12px;
   display: grid;
   overflow-y: hidden;
@@ -46,13 +46,13 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: #00a8ff;
+    background-color: white;
     border: 0;
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
     font-weight: 600;
-    color: white;
+    color: #5ab4ea;
   }
 }
 
