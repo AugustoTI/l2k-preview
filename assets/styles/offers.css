@@ -45,69 +45,52 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  border: 2px solid #002d9c;
+  gap: 1rem;
+  border: 2px solid #dfdfdf;
 }
 
 .plan-info-subtitle {
-  font-size: 0.9rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #00154f;
   text-transform: uppercase;
-  color: #000;
 }
 
 .plan-info-title {
-  font-size: 2rem;
-  color: #0d2678;
-  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.15rem;
+
+  h2 {
+    font-size: 6rem;
+    color: #00154f;
+    line-height: 1;
+  }
+
+  span {
+    font-size: 3rem;
+    color: #00154f;
+    line-height: 0.5;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 .plan-info-price {
-  font-size: 1.25rem;
-  margin: 5px 0 20px 0;
-  color: #000;
-}
-
-.plan-btn {
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  /* max-width: 180px; */
-  width: 100%;
-  height: 40px;
-  margin-bottom: 1.25rem;
-  margin-inline: auto;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: #54b4ea;
-  color: #fff;
-  border-radius: 20px;
-  transition: background 0.2s;
-
-  &:hover {
-    background: #3389bb;
-  }
+  padding-block: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #00154f;
+  border-block: 2px solid #a7a7a7;
 }
 
 .plan-benefits {
-  margin-bottom: 1.5rem;
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    color: #000;
-    font-size: 0.75rem;
-
-    i {
-      color: #54b4ea;
-      font-size: 1rem;
-    }
-
-    &:not(:last-child) {
-      border-bottom: 1px solid #ccc;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #00154f;
+  list-style: none;
 }
 
 .plan-addons {
@@ -116,31 +99,29 @@
   gap: 1rem;
 }
 
-.plan-addon {
-  color: #000;
+.plan-addon-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .plan-addon-title {
   font-size: 0.875rem;
   margin-bottom: 8px;
   font-weight: 400;
-}
-
-.plan-addon-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
+  color: #00154f;
 }
 
 .plan-addon-list-item {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  color: #00154f;
 
   input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -148,12 +129,29 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 
   img {
     max-width: 100%;
     display: block;
     width: auto;
-    height: 12px;
+    height: 40px;
   }
+}
+
+.plan-btn {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-inline: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #54b4ea, #0d2678);
+  color: #fff;
+  border-radius: 20px;
+  transition: background 0.2s;
+  margin-top: auto;
 }

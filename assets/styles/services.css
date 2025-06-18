@@ -64,6 +64,20 @@
   object-fit: cover;
 }
 
+.services-download-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin-inline: auto;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media (width >= 768px) {
   .services-container {
     grid-template-columns: 1fr 1fr;
@@ -81,6 +95,11 @@
       padding-left: 1.5rem;
       max-width: initial;
     }
+  }
+
+  .services-download-buttons {
+    max-width: 400px;
+    margin-inline: initial;
   }
 }
 

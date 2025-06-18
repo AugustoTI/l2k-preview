@@ -5,7 +5,7 @@ const currencyFormatter = new Intl.NumberFormat("pt-BR", {
 
 document.querySelectorAll(".plan").forEach((plan) => {
   const base = parseFloat(plan.dataset.base);
-  const totalEl = plan.querySelector(".plan-info-price");
+  const totalEl = plan.querySelector("#plan-price");
   const checkboxes = plan.querySelectorAll('input[type="checkbox"]');
 
   const updatePrice = () => {
