@@ -22,21 +22,38 @@
 
 .top-left-item {
   flex-grow: inherit;
-  background-color: #daf7ff;
   padding-block: 0.625rem;
   padding-inline: 1rem;
-  border: 0 solid #757575;
-  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 1.5rem;
   text-decoration: none;
-  color: #062450;
+  color: white;
   font-size: 0.875rem;
   display: inline-flex;
   justify-content: center;
   letter-spacing: 0.05em;
+}
+
+.top-customer {
+  background-color: #54b4ea;
+  color: white;
   transition: background 0.2s;
 
   &:hover {
-    background-color: #a7e8fa;
+    background-color: #2b8dc5;
+  }
+}
+
+.top-enterprise {
+  background: transparent;
+  color: #54b4ea;
+  border-color: #54b4ea;
+  transition: background 0.2s;
+
+  &:hover {
+    border-color: #2b8dc5;
+    background-color: #2b8dc5;
+    color: white;
   }
 }
 
@@ -75,7 +92,7 @@
 }
 
 .top-support-text {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .top-support-separator {
@@ -85,7 +102,7 @@
 }
 
 .top-support-phone {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .top-actions {
@@ -96,9 +113,9 @@
 
 .top-whatsapp,
 .top-boleto {
+  border: 1px solid transparent;
   text-decoration: none;
   border-radius: 50px;
-  color: white;
   font-size: 0.875rem;
   display: inline-flex;
   align-items: center;
@@ -109,20 +126,24 @@
 }
 
 .top-whatsapp {
-  background-color: #25d366;
+  color: #25d366;
+  border-color: #25d366;
   transition: background 0.2s;
 
   &:hover {
-    background-color: #0daf48;
+    color: white;
+    background-color: #25d366;
   }
 }
 
 .top-boleto {
-  background-color: #00afdb;
+  color: #54b4ea;
+  border-color: #54b4ea;
   transition: background 0.2s;
 
   &:hover {
-    background-color: #0084a5;
+    color: white;
+    background-color: #54b4ea;
   }
 }
 
@@ -194,7 +215,8 @@
   text-transform: uppercase;
 }
 
-.header-menu a {
+.header-menu a,
+.header-menu span {
   display: block;
   padding: 0 16px;
   cursor: pointer;
@@ -222,6 +244,8 @@
   position: absolute;
   text-decoration: none;
   width: 220px;
+  overflow-y: auto;
+  max-height: 500px;
   background-color: white;
   color: #000;
   list-style: none;
