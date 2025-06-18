@@ -167,9 +167,6 @@ body {
   .hamburger {
     display: block;
   }
-  .mobile-menu {
-    display: flex;
-  }
   .slide-text h1 {
     font-size: 40px;
   }

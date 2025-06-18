@@ -51,6 +51,7 @@
         <div class="header-logo">
           <img src="./assets/svgs/marcatv2.svg" alt="" />
         </div>
+
         <nav class="header-nav">
           <!-- Nav 1 -->
           <ul class="header-menu">
@@ -68,8 +69,21 @@
             <li class="header-menu-item"><a href="#">Ajuda</a></li>
           </ul>
         </nav>
+
+        <button class="header-menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a href="#">Como jogar</a>
+        <a href="#">Assinante</a>
+        <a href="#">Disney</a>
+        <a href="#">Resto dos links</a>
+      </nav>
+    </div>
 
     <!-- Main Section -->
     <section class="slider">
@@ -139,16 +153,15 @@
 
             <ul class="plan-benefits">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-wifi"></i>
                 Wifi 5
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                LzkPlay + 100 Canais
+              <li class="plan-benefit-tv">
+                <img src="./assets/svgs/marcatv1.svg" alt="" /> + 150 Canais
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
-                Livros
+                <i class="fa-solid fa-book-open"></i>
+                Books
               </li>
             </ul>
 
@@ -217,16 +230,16 @@
 
             <ul class="plan-benefits">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-wifi"></i>
                 Wifi 6
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                LzkPlay + 100 Canais
+              <li class="plan-benefit-tv">
+                <img src="./assets/svgs/marcatv1.svg" alt="" />
+                + 150 Canais
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
-                Livros
+                <i class="fa-solid fa-book-open"></i>
+                Books
               </li>
               <li>
                 <i class="fa-solid fa-check"></i>
@@ -243,7 +256,7 @@
                     <input
                       type="checkbox"
                       id="plan-400-service-1"
-                      data-extra="10"
+                      data-extra="25"
                     />
                     <label
                       for="plan-400-service-1"
@@ -286,16 +299,16 @@
 
             <ul class="plan-benefits">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-wifi"></i>
                 Wifi 6
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                LzkPlay + 100 Canais
+              <li class="plan-benefit-tv">
+                <img src="./assets/svgs/marcatv1.svg" alt="" />
+                + 150 Canais
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
-                Livros
+                <i class="fa-solid fa-book-open"></i>
+                Books
               </li>
               <li>
                 <i class="fa-solid fa-check"></i>
@@ -312,7 +325,7 @@
                     <input
                       type="checkbox"
                       id="plan-600-service-1"
-                      data-extra="10"
+                      data-extra="25"
                     />
                     <label
                       for="plan-600-service-1"
@@ -345,8 +358,8 @@
             <div class="plan-info">
               <h3 class="plan-info-subtitle">100% fibra óptica</h3>
               <div class="plan-info-title">
-                <h2>1</h2>
-                <span>GB</span>
+                <h2>1000</h2>
+                <span>Mega</span>
               </div>
               <p class="plan-info-price">
                 <span id="plan-price">R$ 149,90</span> <span>/Mês</span>
@@ -355,16 +368,16 @@
 
             <ul class="plan-benefits">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-wifi"></i>
                 Wifi 6
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                LzkPlay + 100 Canais
+              <li class="plan-benefit-tv">
+                <img src="./assets/svgs/marcatv1.svg" alt="" />
+                + 150 Canais
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
-                Livros
+                <i class="fa-solid fa-book-open"></i>
+                Books
               </li>
               <li>
                 <i class="fa-solid fa-check"></i>
@@ -753,6 +766,7 @@
     <div id="google_translate_element" style="display: none"></div>
 
     <script src="./assets/scripts/plans.js"></script>
+    <script src="./assets/scripts/mobile-nav.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>

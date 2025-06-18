@@ -155,3 +155,14 @@
   transition: background 0.2s;
   margin-top: auto;
 }
+
+.plan-benefit-tv {
+  display: flex;
+  align-items: center;
+
+  & > img {
+    display: block;
+    max-width: 100%;
+    height: 20px;
+  }
+}
