@@ -57,6 +57,13 @@
   text-transform: uppercase;
 }
 
+.plan-info-subtitle2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00154f;
+}
+
 .plan-info-title {
   text-align: center;
   margin-bottom: 1.15rem;
@@ -91,6 +98,27 @@
   gap: 0.5rem;
   color: #00154f;
   list-style: none;
+  padding: 2px;
+}
+#img1 {
+  padding: 2px;
+}
+#img2 {
+  padding: 2px;
+}
+
+#img3 {
+  padding: 2px;
+}
+
+.plan-benefits img {
+  width: 25%;
+  height: 20px;
+}
+
+.plan-benefits .img3 {
+  width: 25%;
+  height: 20px;
 }
 
 .plan-addons {
@@ -116,16 +144,19 @@
 .plan-addon-list-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.625rem;
-  color: #00154f;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #00154f;
+  /* color: #00154f;
 
   input[type="checkbox"] {
     width: 24px;
     height: 24px;
-  }
+  } */
 }
 
-.plan-addon-list-item-label {
+/* .plan-addon-list-item-label {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -137,7 +168,7 @@
     width: auto;
     height: 40px;
   }
-}
+} */
 
 .plan-btn {
   text-decoration: none;
@@ -158,6 +189,8 @@
 
 .plan-benefit-tv {
   display: flex;
+  padding-left: 10%;
+
   align-items: center;
 
   & > img {
@@ -165,4 +198,76 @@
     max-width: 100%;
     height: 20px;
   }
+}
+
+.plan-addon-list-item-images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #000;
+
+  & > img {
+    display: block;
+    max-width: 100%;
+    height: 20px;
+  }
+}
+
+.plan-switch {
+  --secondary-container: #0d2678;
+  --primary: #ffffff;
+  flex-shrink: 0;
+  font-size: 0.8125rem;
+  position: relative;
+  display: inline-block;
+  width: 3.7em;
+  height: 1.8em;
+
+  input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  input:checked + .plan-slider::before {
+    background-color: var(--primary);
+  }
+
+  input:checked + .plan-slider {
+    background-color: var(--secondary-container);
+  }
+
+  input:focus + .plan-slider {
+    box-shadow: 0 0 1px var(--secondary-container);
+  }
+
+  input:checked + .plan-slider:before {
+    transform: translateX(1.9em);
+  }
+}
+
+.plan-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a7a7a7;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+
+.plan-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: white;
+  transition: 0.4s;
 }
