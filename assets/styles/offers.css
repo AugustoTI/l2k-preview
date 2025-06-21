@@ -57,13 +57,6 @@
   text-transform: uppercase;
 }
 
-.plan-info-subtitle2 {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #00154f;
-}
-
 .plan-info-title {
   text-align: center;
   margin-bottom: 1.15rem;
@@ -92,33 +85,32 @@
   border-block: 2px solid #a7a7a7;
 }
 
-.plan-benefits {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.plan-benefits-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
   color: #00154f;
+  margin-bottom: 0.5rem;
+}
+
+.plan-benefits-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  padding: 2px;
-}
-#img1 {
-  padding: 2px;
-}
-#img2 {
-  padding: 2px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-#img3 {
-  padding: 2px;
-}
+.plan-benefits-item {
+  flex-shrink: 0;
+  width: 50px;
 
-.plan-benefits img {
-  width: 25%;
-  height: 20px;
-}
-
-.plan-benefits .img3 {
-  width: 25%;
-  height: 20px;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .plan-addons {
@@ -148,27 +140,7 @@
   gap: 0.625rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #00154f;
-  /* color: #00154f;
-
-  input[type="checkbox"] {
-    width: 24px;
-    height: 24px;
-  } */
 }
-
-/* .plan-addon-list-item-label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.875rem;
-
-  img {
-    max-width: 100%;
-    display: block;
-    width: auto;
-    height: 40px;
-  }
-} */
 
 .plan-btn {
   text-decoration: none;
@@ -189,9 +161,9 @@
 
 .plan-benefit-tv {
   display: flex;
-  padding-left: 10%;
-
+  flex-wrap: wrap;
   align-items: center;
+  padding-left: 10%;
 
   & > img {
     display: block;
@@ -210,7 +182,7 @@
   & > img {
     display: block;
     max-width: 100%;
-    height: 20px;
+    height: 30px;
   }
 }
 
