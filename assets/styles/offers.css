@@ -31,7 +31,7 @@
 
 .plans {
   display: none;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -109,7 +109,8 @@
   img {
     display: block;
     max-width: 100%;
-    height: auto;
+    max-height: 30px;
+    border-radius: 5px;
   }
 }
 
@@ -182,7 +183,8 @@
   & > img {
     display: block;
     max-width: 100%;
-    height: 30px;
+    height: 24px;
+    border-radius: 5px;
   }
 }
 
