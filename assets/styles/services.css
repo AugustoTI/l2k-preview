@@ -5,10 +5,21 @@
 }
 
 .services-container {
-  background-color: #54b4ea;
+  background-color: #00000046;
   border-radius: 12px;
   display: grid;
+  align-items: center;
   overflow-y: hidden;
+  height: 450px;
+  position: relative;
+}
+
+.services-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
 }
 
 .services-content {
