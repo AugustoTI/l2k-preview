@@ -245,3 +245,47 @@
   background-color: white;
   transition: 0.4s;
 }
+
+.plan-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-phone-info {
+  color: #00154f;
+  font-size: 0.875rem;
+}
+
+.plan-phone-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.plan-phone-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  i {
+    color: #00154f;
+  }
+
+  .plan-addon-title {
+    margin-bottom: 0;
+  }
+}
+
+.plan-wifi {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .plan-wifi-title {
+    font-size: 0.875rem;
+    color: #00154f;
+  }
+}
