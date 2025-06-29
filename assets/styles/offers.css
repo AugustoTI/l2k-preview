@@ -283,9 +283,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.plan-wifi-title-container {
+  display: flex;
+  gap: 0.25rem;
+  color: #00154f;
 
   .plan-wifi-title {
     font-size: 0.875rem;
-    color: #00154f;
   }
 }
